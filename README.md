@@ -4,10 +4,10 @@ Claro! Aqui está o README atualizado:
 
 **Personal Finance** é uma aplicação web de página única que permite aos usuários gerenciar suas finanças pessoais através de um controle simples e intuitivo das transações financeiras.
 
-- **Veja Online:** [Link para a aplicação](#)
+<!-- - **Veja Online:** [Link para a aplicação](#)
 
 ![Projeto](./path/to/image1.png)
-![Projeto](./path/to/image2.png)
+![Projeto](./path/to/image2.png) -->
 
 ## Funcionalidades
 
