@@ -1,11 +1,13 @@
+Claro! Aqui está o README atualizado:
+
 ### Personal Finance
 
 **Personal Finance** é uma aplicação web de página única que permite aos usuários gerenciar suas finanças pessoais através de um controle simples e intuitivo das transações financeiras.
 
-<!-- - **Veja Online:** [Link para a aplicação](#)
+- **Veja Online:** [Link para a aplicação](#)
 
 ![Projeto](./path/to/image1.png)
-![Projeto](./path/to/image2.png) -->
+![Projeto](./path/to/image2.png)
 
 ## Funcionalidades
 
@@ -38,13 +40,56 @@
     npm install -g json-server
     ```
 
-3. **Inicie o JSON Server:**
+3. **Crie um script para executar o JSON Server:**
 
-    ```bash
-    json-server --watch db.json
+    No arquivo `package.json`, adicione:
+
+    ```json
+    // ...
+    "scripts": {
+      "serve": "json-server --watch db.json"
+    }
+    // ...
     ```
 
-4. **Abra o arquivo `index.html` em seu navegador.**
+4. **Crie um arquivo `db.json` com os dados iniciais do backend:**
+
+    ```json
+    {
+      "transactions": [
+        {
+          "id": 1,
+          "name": "Freela",
+          "amount": 300
+        },
+        {
+          "id": 2,
+          "name": "Salário",
+          "amount": 3200
+        },
+        {
+          "id": 3,
+          "name": "Conta de água",
+          "amount": -60
+        },
+        {
+          "id": 4,
+          "name": "Conta de luz",
+          "amount": -150
+        }
+      ]
+    }
+    ```
+
+5. **Inicie o JSON Server:**
+
+    ```bash
+    npm run serve
+    ```
+
+6. **Abra o arquivo `index.html` em seu navegador.**
+
+7. **Configuração do Live Server:** Vá nas configurações do plugin Live Server e configure para ele não ler o arquivo `db.json`.
 
 ## Estrutura do Projeto
 
@@ -112,6 +157,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou env
 ## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
 
 ## Contato
 
